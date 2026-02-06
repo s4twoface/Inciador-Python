@@ -176,7 +176,7 @@ class LauncherModerno:
 
         marca_dagua = ctk.CTkLabel(
             main_frame,
-            text="© 2026 - Desenvolvido por slm",
+            text="© 2026 - Desenvolvido por andrew1",
             font=ctk.CTkFont(size=10, slant="italic"),
             text_color="gray"
         )

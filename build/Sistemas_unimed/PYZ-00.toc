@@ -1,4 +1,4 @@
-('C:\\Users\\andrew.salim\\Downloads\\files\\build\\Sistemas_unimed\\PYZ-00.pyz',
+('C:\\Users\\andrew.salim\\Documents\\Inciador-Python\\build\\Sistemas_unimed\\PYZ-00.pyz',
  [('__future__',
    'C:\\Users\\andrew.salim\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\__future__.py',
    'PYMODULE'),
