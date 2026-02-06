@@ -9,15 +9,12 @@ import json  # Para salvar configurações em arquivo
 import os
 
 # Configuração de aparência do CustomTkinter
-ctk.set_appearance_mode("green")  # Modo escuro
-ctk.set_default_color_theme("green")  # Tema de cor
+ctk.set_appearance_mode("dark")  # Modo escuro
+ctk.set_default_color_theme("dark-blue")  # Tema de cor
 
 
 # ===== CLASSE PRINCIPAL =====
 class LauncherModerno:
-    """
-    Versão TOP do launcher com interface moderna
-    """
     
     def __init__(self, root):
         self.root = root
@@ -101,15 +98,15 @@ class LauncherModerno:
         titulo = ctk.CTkLabel(
             header_frame,
             text="Sistemas Unimed",
-            font=ctk.CTkFont(size=28, weight="bold")
+            font=ctk.CTkFont(family="Segoe UI", size=28, weight="bold")
         )
         titulo.pack()
         
         subtitulo = ctk.CTkLabel(
             header_frame,
-            text="Abra suas rotinas de trabalho com um clique",
-            font=ctk.CTkFont(size=13),
-            text_color="white"
+            text="Iniciador de Sistemas para Colaboradores",
+            text_color="white",
+            font=ctk.CTkFont(family="Segoe UI", size=14)
         )
         subtitulo.pack()
         
@@ -117,11 +114,10 @@ class LauncherModerno:
         cards_frame = ctk.CTkFrame(main_frame, fg_color="transparent")
         cards_frame.pack(fill="both", expand=True, pady=10)
         
-        # Grid com 2 colunas
+      
         cards_frame.columnconfigure(0, weight=1)
         
         
-        # ===== CRIA UM CARD PRA CADA ROTINA =====
         row = 0
         col = 0
         
@@ -145,9 +141,9 @@ class LauncherModerno:
         # ===== BARRA DE STATUS =====
         self.status_label = ctk.CTkLabel(
             main_frame,
-            text="✓ Pronto para iniciar",
+            text="Pronto para iniciar",
             font=ctk.CTkFont(size=12),
-            text_color="#00995d"
+            text_color="yellow"
         )
         self.status_label.pack(pady=15)
         
@@ -165,7 +161,7 @@ class LauncherModerno:
         
         btn_sair = ctk.CTkButton(
             bottom_frame,
-            text="❌ Sair",
+            text="Sair",
             command=self.sair,
             width=140,
             height=35,
@@ -189,7 +185,8 @@ class LauncherModerno:
         card = ctk.CTkFrame(
             parent,
             corner_radius=10,
-            fg_color="gray25"
+            fg_color="gray20",
+            width=250,
         )
         card.grid(row=row, column=col, padx=10, pady=10, sticky="nsew")
         
@@ -275,7 +272,7 @@ class LauncherModerno:
 
 # ===== EXECUÇÃO =====
 if __name__ == "__main__":
-    root = ctk.CTk()  # Janela CustomTkinter
+    root = ctk.CTk() 
     app = LauncherModerno(root)
     root.mainloop()
 
