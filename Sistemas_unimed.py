@@ -278,12 +278,10 @@ class LauncherModerno:
     
     def sair(self):
         """
-        Fecha o aplicativo
+        Fecha a aplicação com confirmação
         """
-        if messagebox.askyesno("Sair", "Deseja realmente sair?"):
-            self.salvar_config()  # Salva antes de fechar
-            self.root.quit()
-
+        if messagebox.askyesno("Sair", "Tem certeza que deseja sair?"):
+            self.root.destroy()
 
 # ===== EXECUÇÃO =====
 if __name__ == "__main__":
