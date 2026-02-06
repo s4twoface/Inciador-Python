@@ -20,6 +20,8 @@ class LauncherModerno:
         self.root = root
         self.root.title("Sistemas Unimed")
         self.root.geometry("600x550")
+
+        
         try:
             self.root.iconbitmap("ss.ico")
         except:
