@@ -35,9 +35,7 @@ class LauncherModerno:
             "completa": {
                 "nome": "ROTINA",
                 "descricao": "Sistemas Unimed",
-                "programas": [
-                    "msteams.exe",
-                ],
+            
                 "links": [
                 "https://clinica.sgusuite.com.br/agendas",
                 "https://portalrh3.unimedjf.coop.br/portalrh/WPortalRH.dll/$/",
