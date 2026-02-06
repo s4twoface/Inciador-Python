@@ -34,8 +34,8 @@ class LauncherModerno:
         # Dicionário com todas as rotinas (mais fácil de gerenciar)
         self.rotinas = {
             "completa": {
-                "nome": "Rotina",
-                "descricao": "todos os sistemas",
+                "nome": "ROTINA",
+                "descricao": "Sistemas Unimed",
                 "programas": [
                     "msteams.exe",
                 ],
@@ -184,17 +184,7 @@ class LauncherModerno:
     
     
     def criar_card(self, parent, titulo, descricao, comando, row, col):
-        """
-        Cria um card (botão estilizado) para uma rotina
-        
-        Parâmetros:
-        - parent: onde vai ficar
-        - titulo: texto principal
-        - descricao: texto secundário
-        - comando: função ao clicar
-        - row, col: posição no grid
-        """
-        
+       
         # Frame do card
         card = ctk.CTkFrame(
             parent,
