@@ -1,7 +1,7 @@
 
 
 import customtkinter as ctk  # Tkinter moderno
-from tkinter import messagebox
+from tkinter     import messagebox
 import webbrowser
 import time
 import threading
@@ -60,24 +60,22 @@ class LauncherModerno:
     
     
     def centralizar_janela(self):
-        """
-        Centraliza a janela no meio da tela
-        """
-        self.root.update_idletasks()  # Atualiza info da janela
+       
+        self.root.update_idletasks()  
         
-        # Pega tamanho da tela
+     
         largura_tela = self.root.winfo_screenwidth()
         altura_tela = self.root.winfo_screenheight()
         
-        # Pega tamanho da janela
+      
         largura_janela = self.root.winfo_width()
         altura_janela = self.root.winfo_height()
         
-        # Calcula posição central
+        
         x = (largura_tela - largura_janela) // 4
         y = (altura_tela - altura_janela) // 4
         
-        # Define posição
+       
         self.root.geometry(f"+{x}+{y}")
     
     
